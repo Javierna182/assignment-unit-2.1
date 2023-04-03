@@ -47,7 +47,7 @@ console.log('all of our pets are ' , pets);
 
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 
-let allowedPets = 5;
+let allowedPets = 4;
 
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
 // if it's not true, console log "How about we stay home?"
@@ -62,12 +62,9 @@ else{
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
 
-if( luckyNumber == 2 , adventurous ){
-    console.log('Rolls the dice');
- } 
- else{
-     console.log('do not roll the dice');
- } 
+if( luckyNumber == 2 , adventurous = true ){
+    console.log('Roll the dice!');
+}
 
 // 15 - Write a conditional that console logs "I can have more pets!" 
 //if the value of `pets` is less than the value of `allowedPets`,
@@ -93,6 +90,8 @@ else{(pets > allowedPets)
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
+
+let mostPets = 7; 
 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
