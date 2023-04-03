@@ -28,7 +28,7 @@ console.log('I like adventures');
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
 
 let food = 'sushi';
-console.log('My favorite food is' , food);
+console.log('My favorite food is:' , food);
 
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
 
@@ -49,7 +49,7 @@ console.log('I bought more pets, so now I have:', pets);
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 
 let allowedPets = 4;
-console.log('I am allowed to have:' , allowedPets);
+console.log('I am only allowed to have:' , allowedPets);
 
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
 // if it's not true, console log "How about we stay home?"
@@ -95,7 +95,7 @@ else{(pets >= allowedPets)
 
 let mostPets = pets;
 
-if( pets != friendsPets ){
+if( pets && friendsPets ){
     console.log('The number of pets we have together are:' , pets + friendsPets);
     if(friendsPets){
         console.log( 'My friend has: ' , friendsPets );
@@ -115,17 +115,17 @@ console.log('most pets' , mostPets);
 //      You'll need to research how to use switch statements!
 
 
-const expr =  'if your lucky number is 3';
-switch (expr) {
-  case 'if your lucky number is 1':
+const luck =  3;
+switch (luck) {
+  case 1:
     console.log('First is the worst.');
     break;
 
-  case 'if your lucky number is 2':
+  case 2:
     console.log('Second is the best.');
     break;
 
-  case 'if your lucky number is 3':
+  case 3:
     console.log('Third is the one with the polka dot dress.');
     break;
     
@@ -134,8 +134,16 @@ switch (expr) {
 }
 
 
-
-
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
 
+let notAdventurous = false;
+let message;
+
+if (adventurous <= notAdventurous) {
+  message = 'Adventures are great!';
+} else {
+  message = 'How about we stay home?';
+}
+
+console.log(message);
