@@ -42,7 +42,7 @@ console.log('My friend Juan has:', friendsPets);
 
 // 11 - Add two pets to your `pets` variable
 
-pets += 4;
+pets += 2;
 console.log('I bought more pets, so now I have:', pets);
 
 
@@ -55,7 +55,7 @@ console.log('I am only allowed to have:' , allowedPets);
 // if it's not true, console log "How about we stay home?"
 
 if( adventurous == 'I am adventurous' , adventurous){
-    console.log('Adventures are Great!');
+    console.log('Adventures are great!');
 }
 else{
     console.log('How about we stay home!');
@@ -64,7 +64,7 @@ else{
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
 
-if( luckyNumber >= 2 && adventurous >= true ){
+if( luckyNumber == 2 && adventurous == true ){
     console.log('Roll the dice!');
 }
 
@@ -74,13 +74,13 @@ if( luckyNumber >= 2 && adventurous >= true ){
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
 
-if(pets <= allowedPets){
+if(pets < allowedPets){
     console.log('I can have more pets!');
 }
-else if(pets == allowedPets){
+else if(pets <= allowedPets){
     console.log('I have enough pets');
 }
-else{(pets >= allowedPets)
+else{(pets > allowedPets)
     console.log('Oh no, I have too many pets!');
 }
     
@@ -115,8 +115,7 @@ console.log('most pets' , mostPets);
 //      You'll need to research how to use switch statements!
 
 
-const luck =  3;
-switch (luck) {
+switch (luckyNumber) {
   case 1:
     console.log('First is the worst.');
     break;
@@ -137,10 +136,10 @@ switch (luck) {
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
 
-let notAdventurous = false;
+
 let message;
 
-if (adventurous <= notAdventurous) {
+if (adventurous) {
   message = 'Adventures are great!';
 } else {
   message = 'How about we stay home?';
