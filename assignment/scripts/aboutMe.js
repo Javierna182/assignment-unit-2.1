@@ -54,7 +54,7 @@ console.log('I am only allowed to have:' , allowedPets);
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
 // if it's not true, console log "How about we stay home?"
 
-if( adventurous == 'I am adventurous' , adventurous){
+if(adventurous){
     console.log('Adventures are great!');
 }
 else{
@@ -77,7 +77,7 @@ if( luckyNumber == 2 && adventurous == true ){
 if(pets < allowedPets){
     console.log('I can have more pets!');
 }
-else if(pets <= allowedPets){
+else if(pets == allowedPets){
     console.log('I have enough pets');
 }
 else{(pets > allowedPets)
@@ -145,4 +145,4 @@ if (adventurous) {
   message = 'How about we stay home?';
 }
 
-console.log(message);
+console.log(message = adventurous ? 'Adventures are great!' : 'How about we stay home?')
